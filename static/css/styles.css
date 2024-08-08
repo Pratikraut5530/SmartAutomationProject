@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Section */
+.search-form {
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-form h2 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.search-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.search-form .form-row > div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.search-form button {
+    padding: 0.75rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: auto;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Loading Indicator */
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    z-index: 1000;
+}
+
+/* Results Section */
+.results h2 {
+    text-align: center;
+    margin-top: 2rem;
+    color: #007bff;
+}
+
+.results .results-table {
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.results .results-table th, .results .results-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.results .results-table th {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.results .results-table th:hover {
+    background-color: #0056b3;
+}
+
+.results .results-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.results .results-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.results .results-table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.results .results-table a:hover {
+    text-decoration: underline;
+}
